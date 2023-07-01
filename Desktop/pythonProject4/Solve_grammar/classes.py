@@ -21,6 +21,7 @@ def solve_grammar_mistakes(text):
 
         # Check and correct grammar mistakes in the text
         corrected_text = language_tool_python.correct(text, tool.check(text))
+        print(corrected_text)
 
         return corrected_text
     except TypeError as e:
